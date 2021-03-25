@@ -8,7 +8,7 @@ a {
 }
 
 body {
-    background-color: whitesmoke;   
+    background-color: white;   
 }
 
 .container {
@@ -29,6 +29,12 @@ h1, h3 {
     color: peru;
 }
 
+header img {
+    width: 100px;
+    display: block;
+    margin: auto;
+    opacity: 1;
+}
 .menu ul li {
     display: inline-block;
     padding: 5px 25px;
@@ -70,4 +76,27 @@ section {
     background-color: whitesmoke;
 }
 
+.catur {
+    background-color: white;
+    width: 250px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
 
+.catur img {
+    width: 200px;
+}
+
+.catur h3, h5 {
+    color: black;
+    padding: 5px;
+}
+
+.catur button {
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
