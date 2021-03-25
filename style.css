@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: whitesmoke;   
+}
+
+.container {
+    background-color: peru;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1, h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: peru;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 5px 25px;
+}
+
+.menu ul li:hover {
+    background-color: whitesmoke;
+}
+
+.active {
+    background-color: whitesmoke ;
+}
+
+.wallpaper {
+    height: 100vh;
+    border: 1px solid;
+    background-image: url("./Gambar/Background\ Catur\ 3.png");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallpaper h1 {
+    color: white;
+    padding: 20px 25px;
+    border: 3px solid white;
+    background-color: peru;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.product h3 {
+    text-align: center;
+    color: peru;
+    background-color: whitesmoke;
+}
+
+
