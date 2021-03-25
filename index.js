@@ -3,6 +3,90 @@ if (document.readyState == 'loading') {
 } else {
     ready()
 }
+let obj = [ //detail nama dan harga belum saya update
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 1.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 2.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 3.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 4.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 5.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 6.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 7.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 8.jpg"
+    },
+    {
+        nama: "nama",
+        harga: 500000,
+        gambar: "./Gambar/Catur 1.jpg"
+    },
+    
+]
+// update dynamic LIST
+// selectors
+let listBarang = document.getElementById("item-lists");
+
+function createList(obj){
+    for (let i = 0; i < obj.length; i++){
+        let listContainer = document.createElement("div")
+        listContainer.className = ("shop-item")
+        listBarang.appendChild(listContainer)
+
+        let gambarBarang = document.createElement("img")
+        gambarBarang.className = "shop-item-image"
+        listContainer.appendChild(gambarBarang)
+        gambarBarang.src = obj[i].gambar
+
+        let itemDetails = document.createElement("div")
+        listContainer.appendChild(itemDetails)
+
+        let hargaBarang = document.createElement("h3")
+        hargaBarang.className = ("shop-item-price")
+        itemDetails.appendChild(hargaBarang)
+        hargaBarang.innerHTML = `IDR ${obj[i].harga}`
+
+        let namaBarang = document.createElement("h5")
+        namaBarang.className = ("shop-item-title")
+        itemDetails.appendChild(namaBarang)
+        namaBarang.innerHTML = obj[i].nama
+
+        let tombol = document.createElement("button")
+        tombol.className = ("btn-primary"+" "+"shop-item-button"+" "+"btn")
+        tombol.type = "button"
+        itemDetails.appendChild(tombol)
+        tombol.innerHTML = "add"
+    }
+}
+createList(obj)
 
 function ready() {
     let removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -101,3 +185,4 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'IDR ' + total
 }
+
