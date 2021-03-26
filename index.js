@@ -1,3 +1,19 @@
+function format(num) {
+    let strNum = String(num);
+    let count = 0;
+    let output = '';
+    for (let i = strNum.length - 1; i >= 0; i--) {
+        output = strNum[i] + output;
+        if (count === 2 && i != 0) {
+            output = '.' + output;
+            count = 0;
+            continue;
+        }
+        count++
+    }
+    return output;
+}
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -27,7 +43,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+    alert('Terimakasih! Jangan Cheat Ya!')
     let cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -66,7 +82,7 @@ function addItemToCart(title, price, imageSrc) {
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
+            alert('Sudah di Keranjang Ngab!')
             return
         }
     }
@@ -99,5 +115,5 @@ function updateCartTotal() {
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'IDR ' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'IDR ' + format(total)
 }
