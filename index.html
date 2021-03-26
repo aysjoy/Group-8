@@ -6,37 +6,50 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Dewa Kipas Chess Store</title>
+    <title>Situs Belanja Online: Chess Store</title>
 </head>
 <body>
     <header>
         <h1>DEWA KIPAS CHESS</h1>
         <h3>STORE</h3>
-        <img src="./Gambar/Kipas 1.png">
+        <img src="./Gambar/Kipas.png">
         <div class="container">
             <div class="menu">
                 <ul>
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li><a href="product.html">PRODUCT</a></li>
-                    <li><a href="recently.html">RECENTLY ADDED</a></li>
-                    <li><a href="limited.html">LIMITED EDITION</a></li>
-                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#product">PRODUCT</a></li>
+                    <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>    
             </div>
         </div>
+    </header>
+    <div class="container">
+    <section class="wallpaper">
+         <h1><a href="#product">WELCOME CUSTOMERS</a></h1>
     </div>
-</header>
-<section class="wallpaper">
-    <h1><a href="index.html">CHESS LIMITED SERIES</a></h1>
-</section>
-<section class="product">
-        <h3>PRODUCT</h3>
-        <div class="shop-items">
+    </section>
+    <section class="about">
+        <h3 id="about">ABOUT</h3>
+        <div class="container">
+            <h1>Dewa Kipas Store is the leading e-commerce platform in Indonesia.</h1>
+            <p>Launched in 2021, it is a platform tailored for the region, 
+                providing customers with an easy, secure and fast online 
+                shopping experience through strong payment and fulfillment 
+                support.<br><br>
+                We believe online shopping should be accessible, easy and 
+                enjoyable. This is the vision Dewa Kipas Store aspires to deliver on the 
+                platform, every single day.</p>
+        </div>
+    </section>
+    <section class="product">
+        <h3 id="product">PRODUCT</h3>
+            <div class="container">
             <div class="shop-item">
                 <img class="shop-item-image" src="./Gambar/Catur 2.jpg">
                 <div class="shop-item-details">
                 <h3 class="shop-item-price">IDR 500000</h3>
-                <h5 class="shop-item-title">Catur Kayu Sederhana</h5>
+                <h5 class="shop-item-title">Mr. Dadang Chess SET</h5>
                 <button class="btn btn-primary shop-item-button" type="button">Add</button>
                 </div>
             </div>
@@ -44,7 +57,7 @@
                 <img class="shop-item-image" src="./Gambar/Catur 4.jpg">
                 <div class="shop-item-details">
                 <h3 class="shop-item-price">IDR 700000</h3>
-                <h5 class="shop-item-title">Catur Mewah Dermawan</h5>
+                <h5 class="shop-item-title">Queen's Gambit Chess SET</h5>
                 <button class="btn btn-primary shop-item-button" type="button">Add</button>
                 </div>
             </div>
@@ -52,27 +65,32 @@
                 <img class="shop-item-image" src="./Gambar/Catur 3.jpg">
                 <div class="shop-item-details">
                 <h3 class="shop-item-price">IDR 1400000</h3>
-                <h5 class="shop-item-title">Catur Harry Potter</h5>
+                <h5 class="shop-item-title">Harry Potter Chess SET</h5>
                 <button class="btn btn-primary shop-item-button" type="button">Add</button>
-                </div>
             </div>
+            </div>
+    </section>
+    <section class="cart">
+        <h3 id="cart">CART</h3>
+        <div class="container">
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-</section>
-<section class="container content-section">
-    <h2 class="section-header">CART</h2>
-    <div class="cart-row">
-        <span class="cart-item cart-header cart-column">ITEM</span>
-        <span class="cart-price cart-header cart-column">PRICE</span>
-        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-    </div>
-    <div class="cart-items">
-    </div>
-    <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">IDR0</span>
-    </div>
-    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-</section>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">IDR 0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <small>&copy; Dewa Kipas Store 2021. Hak Cipta Dilindungi.</small>
+        </div>
+    </footer>
 </body>
 </html>
 </DOCTYPE>
