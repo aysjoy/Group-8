@@ -8,7 +8,6 @@ a {
 }
 
 body {
-    background-color: white;
     background-image: url("./Gambar/wood_pattern.png");   
 }
 
@@ -16,7 +15,11 @@ body {
     background-color: peru;
     margin: 0 auto;
     text-align: center;
-    width: 1200px;
+}
+
+.tengah {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .container:after {
@@ -53,9 +56,9 @@ header img {
     background-color: whitesmoke;
 }
 
-/* .active {
+.active {
     background-color: whitesmoke ;
-} */
+}
 
 .wallpaper {
     height: 90vh;
@@ -96,6 +99,33 @@ section {
     font-size: 18px;
 }
 
+.tengah {
+    margin: 0;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.logo ul {
+    margin: 0;
+}
+
+.logo li {
+    display: inline;
+}
+
+.logo a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.footer-logo li {
+    padding: 10px 20px ;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
 .product h3 {
     text-align: center;
     color: peru;
@@ -113,6 +143,11 @@ section {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
+}
+
+#product:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .shop-item-image {
@@ -243,4 +278,5 @@ section {
 
 footer {
     padding: 10px;
+    text-align: center;
 }
